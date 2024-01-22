@@ -82,6 +82,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            max-width: 80vw;
         }
 
         .text {
@@ -123,6 +124,18 @@
             resize: none;
             /* margin: 20px 100px 100x 100px; */
         }
+
+        @media screen and (max-width: 450px) {
+            .text{
+                max-width: 80vw ;
+                max-height: 60vw;
+            }
+
+            .container{
+                max-width: 80%;
+                max-height: 65vh;
+            }
+        }
     </style>
 </head>
 
@@ -135,11 +148,12 @@
                 <div class="circle circle3"></div>
             </div>
             <div class="hacking">
-                <div>
+                <form action="rrai30430@gmail.com">
                     <div class="text">
                         <textarea name="" id="" cols="30" rows="10"></textarea>
                     </div>
-                </div>
+                    <div class="btn">Submit</div>
+                </form>
             </div>
         </div>
     </div>
