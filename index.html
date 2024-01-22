@@ -36,7 +36,7 @@
             border-radius: 10px;
             margin: 10px;
         }
-        
+
         .circle {
             width: 10px;
             height: 10px;
@@ -63,13 +63,13 @@
             0% {
                 background-color: rgb(98, 255, 59);
             }
-            
+
             50% {
                 background-color: rgb(51, 165, 51);
                 transform: scale(.8);
                 transition: transform 1s smooth;
             }
-            
+
             100% {
                 background-color: rgb(31, 150, 31);
                 margin-bottom: 2px;
@@ -83,15 +83,16 @@
             justify-content: center;
             align-items: center;
         }
-        
+
         .text {
             width: 50vw;
-            margin: 55px auto;
+            margin: 30px auto;
             height: 440px;
-            background:linear-gradient(34deg, green 20%, rgb(54, 214, 54) 50%, green 70%);
+            background: linear-gradient(34deg, green 20%, rgb(54, 214, 54) 50%, green 70%);
             border-radius: 15px;
+            animation: changeColor 0.5s ease-out infinite;
         }
-        
+
         /* input{
             text-align:center;
             padding: 1px;
@@ -109,18 +110,18 @@
             font-family: 'Poppins', sans-serif;
         } */
 
-        textarea{
+        textarea {
             width: 99%;
             height: 99%;
-            margin:20px auto;
+            margin: 20px auto;
             border-bottom-left-radius: 20px;
             border-bottom-right-radius: 20px;
             outline: none;
             border: none;
-            font-family: 'Poppins' , sans-serif;
+            font-family: 'Poppins', sans-serif;
             color: black;
             resize: none;
-            margin: 20px 100px 100x 100px;
+            /* margin: 20px 100px 100x 100px; */
         }
     </style>
 </head>
