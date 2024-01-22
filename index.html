@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+        body {
+            background-color: rgb(75, 68, 68);
+            width: 100%;
+            height: 100%;
+            margin: auto;
+        }
+
+        .container {
+            position: relative;
+            height: 80vh;
+            width: 65%;
+            margin: 60px auto;
+            background-color: rgb(30, 34, 29);
+            border-radius: 10px;
+        }
+
+        .circles {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        
+        .circle {
+            width: 10px;
+            height: 10px;
+            background-color: grey;
+            border-radius: 10px;
+            position: relative;
+            animation: load 3s ease-in infinite;
+        }
+
+        .circle1 {
+            animation-delay: -0.7s;
+        }
+
+        .circle2 {
+            animation-delay: -0.5s;
+        }
+
+        .circle3 {
+            animation-delay: -0.2s;
+            /* animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+        }
+
+        @keyframes load {
+            0% {
+                background-color: rgb(98, 255, 59);
+            }
+            
+            50% {
+                background-color: rgb(51, 165, 51);
+                transform: scale(.8);
+                transition: transform 1s smooth;
+            }
+            
+            100% {
+                background-color: rgb(31, 150, 31);
+                margin-bottom: 2px;
+                transform: scale(.9);
+                transition: transform 1s smooth;
+            }
+        }
+
+        .hacking {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .text {
+            width: 50vw;
+            margin: 55px auto;
+            height: 440px;
+            background:linear-gradient(34deg, green 20%, rgb(54, 214, 54) 50%, green 70%);
+            border-radius: 15px;
+        }
+        
+        /* input{
+            text-align:center;
+            padding: 1px;
+            margin: 20px auto;
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+            background-color: rgb(135, 255, 124);
+            color: white;
+            resize: none;
+            border: none;
+            border-color: rgb(197, 47, 47);
+            outline: none;
+            font-size: 26px;
+            font-family: 'Poppins', sans-serif;
+        } */
+
+        textarea{
+            width: 99%;
+            height: 99%;
+            margin:20px auto;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            outline: none;
+            border: none;
+            font-family: 'Poppins' , sans-serif;
+            color: black;
+            resize: none;
+            margin: 20px 100px 100x 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="terminal">
+            <div class="circles">
+                <div class="circle circle1"></div>
+                <div class="circle circle2"></div>
+                <div class="circle circle3"></div>
+            </div>
+            <div class="hacking">
+                <div>
+                    <div class="text">
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
